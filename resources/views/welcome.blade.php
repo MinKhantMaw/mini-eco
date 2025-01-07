@@ -10,5 +10,6 @@
     <body class="">
         <livewire:header/>
         <livewire:hero-section/>
+        <livewire:product-section/>
     </body>
 </html>
