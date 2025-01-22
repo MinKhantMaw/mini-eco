@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\AdminDashboard;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\ProductDetails;
 
@@ -8,3 +9,4 @@ Route::get('/', function () {
 });
 
 Route::get('/product/details', ProductDetails::class)->name('product.details');
+Route::get('/admin/dashboard', AdminDashboard::class)->middleware('admin');
